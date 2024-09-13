@@ -2,9 +2,10 @@ package com.perfect.cleanarchitecture.buckpal.account.application.port.out;
 
 import com.perfect.cleanarchitecture.buckpal.account.domain.Account;
 
-import java.time.LocalDateTime;
+public interface AccountLock {
 
-public interface LoadAccountPort {
+    void lockAccount(Account.AccountId accountId);
 
-    Account loadAccount(Account.AccountId accountId, LocalDateTime baselineDate);
+    void releaseAccount(Account.AccountId accountId);
+
 }

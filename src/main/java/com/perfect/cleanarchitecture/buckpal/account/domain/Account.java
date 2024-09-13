@@ -2,6 +2,7 @@ package com.perfect.cleanarchitecture.buckpal.account.domain;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.Value;
 
 import java.time.LocalDateTime;
@@ -15,6 +16,7 @@ import java.util.Optional;
 
 
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
+@Getter
 public class Account {
 
     private AccountId id;
